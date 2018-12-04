@@ -1,0 +1,558 @@
+* {
+	box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+} 
+body {
+    margin: 0;
+    font-size: 18px !important;
+    position: relative;
+}
+
+/* FONT */
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+a, .a {
+    font-family: 'Titillium Web', sans-serif !important;
+}
+a:hover {
+    text-decoration: none !important;
+    color: initial !important;
+}
+p, .p {
+    font-size: 1em;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+}
+h1, .h1 {
+    font-size: 3em !important;
+    font-family: 'Titillium Web', sans-serif !important;
+}
+h2, .h2 {
+    font-size: 2.500em !important;
+    font-family: 'Titillium Web', sans-serif !important;
+}
+h3, .h3 {
+    font-size: 2em !important;
+    font-family: 'Titillium Web', sans-serif !important;
+}
+h4, .h4 {
+    font-size: 1.417em !important;
+    font-family: 'Titillium Web', sans-serif !important;
+}
+/* FONT-COLOR */
+.text-f3f3f3{
+    color: #f3f3f3 !important;
+}
+.text-ffffff{
+    color: #ffffff !important;
+}
+.text-ffd32c{
+    color: #ffd32c !important;
+}
+.text-f4c62b{
+    color: #f4c62b !important;
+}
+.text-39383d{
+    color: #39383d !important;
+}
+.text-ff534e{
+    color: #ff534e !important;
+}
+.text-4c4c51{
+    color: #4c4c51 !important;
+}
+.text-828285{
+    color: #828285 !important;
+}
+.text-f4c62a{
+    color: #f4c62a !important;
+}
+.text-232228{
+    color: #232228 !important;
+}
+.text-413f4b{
+    color: #413f4b !important;
+}
+.text-757579{
+    color: #757579 !important;
+}
+.text-fafbfd {
+    color: #fafbfd !important;
+}
+/* BACKGROUND COLOR */
+.bg-fafbfd {
+    background-color: #fafbfd;
+}
+.bg-ffffff {
+    background-color: #ffffff;
+}
+.bg-232228 {
+    background-color: #232228;
+}
+.bg-f1f2f9 {
+    background-color: #f1f2f9
+}
+.bg-7a061b {
+    background-color: #7a061b;
+}
+/* CUSTOM CONTAINER */
+.container-1400 {
+    max-width: 1400px;
+}
+
+.h-inherit {
+    height: inherit;
+}
+/* BUTTONS */
+.section-first-content .btn-talk-to-us {
+    background: -webkit-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    background: -o-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    background: -ms-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    background: -moz-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    background: linear-gradient(to top, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    border-radius: 10px;
+    font-size: 0.833em;
+    padding: 12px 0 !important;
+    width: 270px;
+}
+.section-first-content .btn-watch-our-video {
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    font-size: 0.833em;
+    padding: 9px 0 !important;
+    width: 270px;
+}
+/* FIRST SECTION CSS :: BEGIN */
+.section-first {
+    background: -webkit-linear-gradient(left, rgb(76, 18, 33) 0%, rgb(107, 13, 31) 60%);
+    background: -o-linear-gradient(left, rgb(76, 18, 33) 0%, rgb(107, 13, 31) 60%);
+    background: -ms-linear-gradient(left, rgb(76, 18, 33) 0%, rgb(107, 13, 31) 60%);
+    background: -moz-linear-gradient(left, rgb(76, 18, 33) 0%, rgb(107, 13, 31) 60%);
+    background: linear-gradient(to right, rgb(76, 18, 33) 0%, rgb(107, 13, 31) 60%);
+}
+.section-first .nav-list > li > ul {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    display: none !important;
+}
+.section-first .nav-list > li > ul > a:hover {
+    color: #ffd32c !important;
+}
+.section-first .nav-list > li > ul:nth-child(4) {
+    display: none !important;
+}
+.section-first .nav-list .logo-toon-experts, .section-first .logo-toon-experts {
+    width: 184px;
+}
+.section-first-content > div {
+    margin: 122px 0;
+}
+.section-first-content > .d-flex > div {
+    flex: 1;    
+}
+.section-first-content h1 {
+    line-height: 1em !important;
+    padding-bottom: 0.5em !important;
+}
+.section-first-content p {
+    padding-bottom: 2.5em !important;
+}
+.section-first .mascot-toon-experts {
+    width: 880px;
+}
+
+.spinner-master2 {
+    display: block;
+    right: 0;
+    top: 0;
+}
+/* BURGER BUTTON */
+.spinner-master2 * {
+    transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+    box-sizing:border-box;
+}
+.spinner-master2 {
+    position:relative;
+    height:50px;
+    width:50px;
+}
+.spinner-master2 input[type=checkbox] {
+    display:none;
+}
+.spinner-master2 label {
+    cursor:pointer;
+    position:absolute;
+    z-index:99;
+    height:100%;
+    width:100%;
+    top:10px;
+    left:0;
+}
+.spinner-master2 .spinner2 {
+    position:absolute;
+    height:5px;
+    width:100%;
+    background-color:#ffd32c;
+}
+.spinner-master2 .diagonal.part-1 {
+    position:relative;
+    float:left;
+}
+.spinner-master2 .horizontal {
+    position:relative;
+    float:left;
+    margin-top:7px;
+}
+.spinner-master2 .diagonal.part-2 {
+    position:relative;
+    float:left;
+    margin-top:6px;
+}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {
+    opacity: 0;
+}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {
+    transform:rotate(135deg);
+	-ms-transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    margin-top:10px;
+}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {
+    transform:rotate(-135deg);
+	-ms-transform:rotate(-135deg);
+    -webkit-transform:rotate(-135deg);
+    margin-top:-16px;
+}
+
+/* NAVIGATION BAR STYLES WHEN HAMBURGER IS CLICKED*/
+.section-first .clicked > li > ul {
+    display: block !important;
+    text-align: center !important;
+}
+.nav-bar-mobile {
+    display: flex !important;
+}
+/* FIRST SECTION CSS :: END */
+/* THIRD SECTION CSS :: BEGIN */
+.section-third .container-1400 .h-custom {
+    height: 40px;
+}
+.section-third .container-1400 p {
+    font-size: 14px !important;
+}
+/* THIRD SECTION CSS :: END */
+/* FOURTH SECTION CSS :: BEGIN */
+.section-fourth > .container > p {
+    max-width: 660px;
+}
+.section-fourth .container-main {
+    background-image: url(img/section-third-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+}
+.section-fourth .gameplanCarousel-container  {
+    background-image: url(img/section-third-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+.section-fourth .container-fluid .gameplanCarousel-container p {
+    max-width: 480px;
+}
+/* THE GAME PLAN CAROUSEL VERTICAL SLIDE */
+.gameplanCarousel-container .carousel-inner> .carousel-item.carousel-item-next ,
+.gameplanCarousel-container .carousel-inner > .carousel-item.active.carousel-item-right{ 
+    transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;
+    
+}
+.gameplanCarousel-container .carousel-inner > .carousel-item.carousel-item-prev ,
+.gameplanCarousel-container .carousel-inner > .carousel-item.active.carousel-item-left{ 
+    transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0);  -moz-transform: translate3d(0,-100%, 0);-ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;
+    
+}
+.gameplanCarousel-container .carousel-inner > .carousel-item.next.carousel-item-left ,
+.gameplanCarousel-container .carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right ,
+.carousel-inner > .carousel-item.active{
+    transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;
+    
+}
+/* THE GAME PLAN CAROUSEL INDICATORS */
+.gameplanCarousel-container .carousel-indicators{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:20px;
+    width:auto;
+    right: 0;
+    margin: auto 0;
+    margin-right: 5%;
+    left: unset;
+    background-image: url(img/the-game-plan-carousel-bullets-bg.png);
+    background-position: top center;
+    height: 310px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.gameplanCarousel-container .carousel-indicators li{
+    display:block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ffd32c; 
+    border-radius: 50%;
+    text-indent: unset;
+    text-align: center;
+    background-color: #570312;
+}
+.gameplanCarousel-container .carousel-indicators li span {
+    font-size: 18px;
+    display: block;
+    height: 32px;
+    padding-top: 2px !important;
+    color: #ffffff;
+    font-family: 'Gotham', sans-serif;
+}
+.gameplanCarousel-container .carousel-indicators li.active{
+    background:#fc504f !important;
+    
+}
+/* FOURTH SECTION CSS :: END */
+/* FIFTH SECTION CSS :: BEGIN */
+.section-fifth {
+    padding: 100px 0;
+}
+.section-fifth img {
+    min-height: 309px;
+/*    border-radius: 50%;   */
+}
+
+.section-fifth .experts-box {
+    /*
+    width: 290px;
+    height: 290px;
+    */
+    margin: 0 auto;
+    transform: translate(0);
+    overflow: hidden;
+    /*
+    border-radius: 50%;
+    */
+}
+.section-fifth .egg {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 288px;
+    height: 309px;
+    border: none;
+    -webkit-border-radius: 52% 52% 49% 49% / 31% 31% 73% 73%;
+    border-radius: 52% 52% 49% 49% / 31% 31% 73% 73%;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #1abc9c;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.section-fifth .experts-box figure {
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.section-fifth .experts-box figure img {
+    width:100%;
+    height: 100%;
+}
+
+.section-fifth .experts-box figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index:100;
+    opacity:0;
+    transition-delay: .3s;
+    transition:.5s ease;
+}
+.section-fifth .experts-box:hover figcaption {
+    opacity:1;
+}
+.section-fifth .experts-box figure:after {
+    content: '';
+    position: absolute;
+    transition: .5s ease-in-out;
+    height: 200%;
+    width: 200%;
+    background: #000;
+    opacity: 0.8;
+}
+.section-fifth .experts-box figure:after {
+    left: 0;
+    top: 0;
+    background: #f0c62c;
+    transform: skew(-135deg) translateX(-100%);
+}
+.section-fifth .experts-box:hover figure:after {
+    transform: skew(-135deg) translateX(0%);
+    opacity: 0.8;
+}
+/* FIFTH SECTION CSS :: END */
+/* SIXTH SECTION CSS :: BEGIN */
+.section-sixth .container-fluid .testimonial-box, .section-sixth .container-fluid .testimonial-box .testimonial-video-container {
+    min-height: 100vh;
+}
+.section-sixth .testimonial-box > div {
+    flex: 1;
+}
+.section-sixth .testimonial-box > div:nth-child(2) {
+    max-height: 100vh;
+}
+.section-sixth .testimonial-box .testimonial-text {
+    font-size: 2em !important;
+}
+.section-sixth .testimonial-box .testimonial-text-box > p {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto !important;
+}
+.section-sixth .testimonial-box .testimonial-text-box > p:nth-child(2) {
+    font-family: 'Titillium Web', sans-serif !important; 
+}
+.section-sixth .testimonial-box .testimonial-text-box > p:nth-child(3) {
+    font-size: 0.75em; 
+}
+/* SIXTH SECTION CSS :: END */
+/* SEVENTH SECTION CSS :: BEGIN */
+
+.section-seventh .container {
+    min-height: calc(100vh - 175px);
+}
+.section-seventh .footer {
+}
+.section-seventh .footer-nav-list a {
+    font-size: 14px !important;
+    font-family: sans-serif !important;
+}
+.section-seventh .footer-nav-list a:hover {
+    color: #ffd32c !important;
+}
+.section-seventh .copyrights-text {
+    font-size: 14px !important;
+}
+.section-seventh .footer .logo-toon-experts {
+    width: 172px;
+}
+.section-seventh .footer .social-icons li {
+   width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #a0a1a4;
+}
+.section-seventh .footer .social-icons i {
+    border-radius: 50%;
+    background-color: #a0a1a4;
+    color: #545459;
+    display: block;
+    margin: auto;
+    width: max-content;
+    padding: 6px 0;
+}
+/* SEVENTH SECTION CSS :: END */
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    body {
+        font-size: 20px !important;
+    }
+    .section-third .container-1400 .h-custom {
+        height: 80px;
+    }
+}
+@media (min-width: 992px) {
+    body {
+        font-size: 22px !important;
+    }
+    .section-third .container-1400 .h-custom {
+        height: 120px;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        font-size: 24px !important;
+    }
+    .spinner-master2 {
+        display: none;
+    }
+    .section-first .nav-list > li > ul:nth-child(4), .section-first .nav-list > li > ul {
+        display: inline-block !important;
+    }
+    .nav-bar-mobile {
+        display: none !important;
+    }
+    .section-third .container-1400 .h-custom {
+        height: 160px;
+    }
+    .order-lg-1 {
+        order: 1;
+    }
+    .order-lg-2 {
+        order: 2;
+    }
+    .order-lg-3 {
+        order: 3;
+    }
+}
+#myVideo {
+    min-height: 100vh;
+    max-width: 100%;
+    object-fit: fill;
+}
+.testimonial-video-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.testimonial-video-container .fa-play {
+    font-size: 100px;
+    color: #ffffff;
+}
+.testimonial-video-container .fa-play:hover {
+    font-size: 100px;
+    color: #f4c62a;
+    cursor: pointer;
+    font-size: 105px;
+    transition: 0.2s;
+}
+
+#testimonialCarousel .carousel-item:nth-child(1) .testimonial-video-container {
+    background-image: url(img/testimonial-video-preview.jpg);
+}
+
+#testimonialCarousel .carousel-item:nth-child(2) .testimonial-video-container {
+    background-image: url(img/loss-meme.jpg);
+}
+
+#testimonialCarousel .carousel-item:nth-child(3) .testimonial-video-container {
+    background-image: url(img/testimonial-video-preview.jpg);
+}
+#testimonialCarousel .carousel-control-prev i,
+#testimonialCarousel .carousel-control-next i{
+    color: #ff534e;
+}
