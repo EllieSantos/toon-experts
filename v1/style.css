@@ -5,7 +5,7 @@
 } 
 body {
     margin: 0;
-    font-size: 18px !important;
+    font-size: 24px !important;
     position: relative;
 }
 
@@ -26,14 +26,8 @@ ul {
 a, .a {
     font-family: 'Titillium Web', sans-serif !important;
 }
-a:hover {
-    text-decoration: none !important;
-    color: initial !important;
-}
 p, .p {
     font-size: 1em;
-    font-family: 'Gotham', sans-serif;
-    font-weight: 300;
 }
 h1, .h1 {
     font-size: 3em !important;
@@ -88,9 +82,6 @@ h4, .h4 {
 .text-757579{
     color: #757579 !important;
 }
-.text-fafbfd {
-    color: #fafbfd !important;
-}
 /* BACKGROUND COLOR */
 .bg-fafbfd {
     background-color: #fafbfd;
@@ -103,9 +94,6 @@ h4, .h4 {
 }
 .bg-f1f2f9 {
     background-color: #f1f2f9
-}
-.bg-7a061b {
-    background-color: #7a061b;
 }
 /* CUSTOM CONTAINER */
 .container-1400 {
@@ -146,9 +134,6 @@ h4, .h4 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 14px;
     display: none !important;
-}
-.section-first .nav-list > li > ul > a:hover {
-    color: #ffd32c !important;
 }
 .section-first .nav-list > li > ul:nth-child(4) {
     display: none !important;
@@ -247,127 +232,32 @@ h4, .h4 {
 }
 /* FIRST SECTION CSS :: END */
 /* THIRD SECTION CSS :: BEGIN */
-.section-third .container-1400 .h-custom {
-    height: 40px;
+.section-third .container-1400 .d-flex > div {
+    flex: 1;
+    padding: 0 42px;
 }
-.section-third .container-1400 p {
+.section-third .container-1400 .d-flex > div > p {
     font-size: 14px !important;
 }
 /* THIRD SECTION CSS :: END */
 /* FOURTH SECTION CSS :: BEGIN */
 .section-fourth > .container > p {
-    max-width: 660px;
-}
-.section-fourth .container-main {
-    background-image: url(img/section-third-bg.jpg);
-    background-repeat: repeat-x;
-    background-position: top;
-}
-.section-fourth .gameplanCarousel-container  {
-    background-image: url(img/section-third-bg.jpg);
-    background-repeat: repeat-x;
-    background-position: bottom;
-}
-.section-fourth .container-fluid .gameplanCarousel-container p {
-    max-width: 480px;
-}
-
-/* THE GAME PLAN CAROUSEL INDICATORS */
-
-.gameplanCarousel-container .slick-dotted.slick-slider {
-    margin-bottom: 0;
-}
-.gameplanCarousel-container .slick-dots {
-    top: 0;
-    bottom: 0;
-    margin-top: auto !important;
-    margin-bottom: auto !important;
-    background-image: url(img/the-game-plan-carousel-bullets-bg.png);
-    background-position: top center;
-    height: 310px;
-    background-repeat: no-repeat;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between;
-    width: max-content;
-    right: 0;
-}
-.gameplanCarousel-container .slick-dots li{
-    display:block;
-}
-.gameplanCarousel-container .slick-dots li button{
-    display:block;
-    width: 40px;
-    height: 40px;
-    border: 3px solid #ffd32c; 
-    border-radius: 50%;
-    text-align: center;
-    background-color: #570312;
-    margin: 0 0 20px auto;
-    font-size: 18px;
-    font-family: 'Gotham', sans-serif;
-    color: #ffffff;
-}
-.gameplanCarousel-container .slick-dots li {
-    width: unset;
-    height: unset;
-}
-
-.gameplanCarousel-container .slick-dots li button:before{
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    display: block;
-    padding-top: 2px !important;
-    color: #ffffff;
-    font-family: 'Gotham', sans-serif;
-    content: '';
-    color: #ffffff;
-}
-.gameplanCarousel-container .slick-dots > li:last-child > button {
-    margin-bottom: 0;
-}
-.gameplanCarousel-container .slick-active > button {
-    background:#fc504f !important;
+    max-width: 630px;
+    
 }
 /* FOURTH SECTION CSS :: END */
 /* FIFTH SECTION CSS :: BEGIN */
-.section-fifth {
-    padding: 100px 0;
-}
 .section-fifth img {
-    min-height: 309px;
-/*    border-radius: 50%;   */
+    border-radius: 50%;
+ 
 }
-
 .section-fifth .experts-box {
-    /*
-    width: 290px;
-    height: 290px;
-    */
-    margin: 0 auto;
+    width: 343px;
+    height: 343px;
+
     transform: translate(0);
     overflow: hidden;
-    /*
     border-radius: 50%;
-    */
-}
-.section-fifth .egg {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 288px;
-    height: 309px;
-    border: none;
-    -webkit-border-radius: 52% 52% 49% 49% / 31% 31% 73% 73%;
-    border-radius: 52% 52% 49% 49% / 31% 31% 73% 73%;
-    font: normal 100%/normal Arial, Helvetica, sans-serif;
-    color: rgba(0,0,0,1);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    background: #1abc9c;
-    overflow: hidden;
-    margin: 0 auto;
 }
 .section-fifth .experts-box figure {
     height:100%;
@@ -378,7 +268,6 @@ h4, .h4 {
     width:100%;
     height: 100%;
 }
-
 .section-fifth .experts-box figcaption {
     position: absolute;
     top: 0;
@@ -415,14 +304,11 @@ h4, .h4 {
 }
 /* FIFTH SECTION CSS :: END */
 /* SIXTH SECTION CSS :: BEGIN */
-.section-sixth .container-fluid .testimonial-box, .section-sixth .container-fluid .testimonial-box .testimonial-video-container {
+.section-sixth .container-fluid > .testimonial-box{
     min-height: 100vh;
 }
 .section-sixth .testimonial-box > div {
     flex: 1;
-}
-.section-sixth .testimonial-box > div:nth-child(2) {
-    max-height: 100vh;
 }
 .section-sixth .testimonial-box .testimonial-text {
     font-size: 2em !important;
@@ -450,9 +336,6 @@ h4, .h4 {
     font-size: 14px !important;
     font-family: sans-serif !important;
 }
-.section-seventh .footer-nav-list a:hover {
-    color: #ffd32c !important;
-}
 .section-seventh .copyrights-text {
     font-size: 14px !important;
 }
@@ -477,26 +360,7 @@ h4, .h4 {
 /* SEVENTH SECTION CSS :: END */
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) {
-    body {
-        font-size: 20px !important;
-    }
-    .section-third .container-1400 .h-custom {
-        height: 80px;
-    }
-}
-@media (min-width: 992px) {
-    body {
-        font-size: 22px !important;
-    }
-    .section-third .container-1400 .h-custom {
-        height: 120px;
-    }
-}
 @media (min-width: 1024px) {
-    body {
-        font-size: 24px !important;
-    }
     .spinner-master2 {
         display: none;
     }
@@ -506,63 +370,4 @@ h4, .h4 {
     .nav-bar-mobile {
         display: none !important;
     }
-    .section-third .container-1400 .h-custom {
-        height: 160px;
-    }
-    .order-lg-1 {
-        order: 1;
-    }
-    .order-lg-2 {
-        order: 2;
-    }
-    .order-lg-3 {
-        order: 3;
-    }
-}
-#myVideo {
-    min-height: 100vh;
-    max-width: 100%;
-    object-fit: fill;
-}
-
-.testimonial-video-container .fa-play {
-    font-size: 100px;
-    color: #ffffff;
-}
-.testimonial-video-container .fa-play:hover {
-    font-size: 100px;
-    color: #f4c62a;
-    cursor: pointer;
-    font-size: 105px;
-    transition: 0.2s;
-}
-
-.section-sixth .testimonial-carousel .testimonial-video-container {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.section-sixth .testimonial-carousel .vid-one {
-    background-image: url(img/testimonial-video-preview.jpg);
-}
-.section-sixth .testimonial-carousel .vid-two {
-    background-image: url(img/loss-meme.jpg);
-}
-.section-sixth .testimonial-carousel .vid-three {
-    background-image: url(img/the-game-plan-the-idea.png);
-}
-.section-sixth .testimonial-carousel-custom-btn-container {
-    left: calc(50% - 125px);
-    bottom: 40px;
-}
-.section-sixth .testimonial-carousel-custom-btn-container a {
-    font-size: 40px;
-    cursor: pointer;
-    color: #ff534e;
-}
-.section-sixth .testimonial-carousel-custom-btn-container #testimonial-carousel-custom-next {
-    margin-left: 20px !important;
-}
-.section-sixth .testimonial-carousel-custom-btn-container a:hover {
-    color: #232228 !important;
 }
