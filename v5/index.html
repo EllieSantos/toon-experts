@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Toon Experts - Unique Cartoon Video Explainers">
+    <meta name="author" content="Ellie Santos">
+	<title>Toon Experts</title>
+    
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    
+    <!-- SLICK CAROUSEL CSS -->
+    <link rel="stylesheet" type="text/css" href="./slick-carousel/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick-carousel/slick-theme.css">
+
+    
+    <!-- CSS -->
+    <link rel='stylesheet' href='style.css' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900" rel="stylesheet">
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+    <!-- NAVIGATION BAR SCRIPT -->
+    <script>
+        $(document).ready(function(){
+            $('.spinner-master2 label').on('click', function () {
+				$("#nav-bar").toggleClass('clicked');
+            });
+        });
+    </script>      
+    
+    <!-- SMOOTH SCROLLING SCRIPT -->
+    <script>
+        $(document).ready(function(){
+            
+            // Add smooth scrolling on all links inside the navbar
+            $("#nav-bar a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    
+                    // Store hash
+                    var hash = this.hash;
+                    
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                }  // End if
+            });
+        });
+    </script>      
+    
+    <!-- VIDEO MODAL SCRIPT -->
+    <script>
+        $(document).ready(function() {
+
+        
+            // when the modal is opened autoplay it  
+            $('#testimonial-video-modal').on('shown.bs.modal', function (e) {
+                
+                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+            })
+            
+            // stop playing the youtube video when I close the modal
+            $('#testimonial-video-modal').on('hide.bs.modal', function (e) {
+                // a poor man's stop video
+                $("#video").attr('src',$videoSrc); 
+            }) 
+            
+         });
+    </script>
+</head>
+<body data-spy="scroll" data-target=".nav-bar-main" data-offset="50">
+    <!-- FIRST SECTION :: BEGIN -->
+    <!-- FIRST SECTION :: BEGIN -->
+    <div class="section-first" id="section-one">
+        <!-- NAVIGATION BAR :: BEGIN -->
+        <div class="container-fluid nav-bar-main">
+            <div class="row">
+                <div class="col">
+                    <div class="flex-row justify-content-between align-items-center nav-bar-mobile m-5">
+                        <div>
+                            <a href="index.html"><img src="img/logo-toon-experts.png" class="logo-toon-experts img-fluid" alt="Toon Experts"></a>
+                        </div>
+                        <div class="spinner-master2 position-relative">
+                            <input type="checkbox" id="spinner-form2">
+                            <label for="spinner-form2" class="spinner-spin2">
+                                <div class="spinner2 diagonal part-1"></div>
+                                <div class="spinner2 horizontal"></div>
+                                <div class="spinner2 diagonal part-2"></div>
+                            </label>
+                        </div>
+                    </div>            
+                    
+                    <div class="bg-transparent mx-auto my-0">
+                        <div id="nav-bar" class="nav-list d-flex flex-row justify-content-around mt-5">
+                            <li class="d-inline-block text-uppercase">
+                                <ul class="px-4"><a class="text-f3f3f3" href="#section-one">Home</a></ul>
+                                <ul class="px-4"><a class="text-f3f3f3" href="#section-two">Clients</a></ul>
+                                <ul class="px-4"><a class="text-f3f3f3" href="#section-four">The Process</a></ul>
+                                <ul class="px-4"><a class="text-f3f3f3" href=""><img src="img/logo-toon-experts.png" class="logo-toon-experts img-fluid" alt="Toon Experts"></a></ul>
+                                <ul class="px-4"><a class="text-f3f3f3" href="#section-five">Our Team</a></ul>
+                                <ul class="px-4"><a class="text-f3f3f3" href="#section-six">Testimonial</a></ul>
+                                <ul class="px-4"><a class="text-f3f3f3" href="#section-seven">Contact Us</a></ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NAVIGATION BAR :: END -->
+        <!-- FIRST SECTION CONTENT :: BEGIN -->
+        <div class="container-fluid section-first-content">
+            <div class="row align-items-center justify-content-center mx-0">    
+                <div class="col-xl-5 col-12">
+                    <div class="mx-auto d-block my-auto">
+                        <div class="px-3">
+                            <div class="align-self-center text-xl-left text-center">
+                                <h1 class="text-ffffff">UNIQUE <span class="text-ffd32c">CARTOON</span> VIDEO EXPLAINERS</h1>
+                                <p class="text-ffffff">Crafted by the <span class="text-f4c62b">Experts</span>!</p>
+                                <div class="d-xl-block d-none">
+                                    <a class="text-uppercase d-inline-block text-center text-39383d mt-3 btn-talk-to-us" href="">TALK TO US!</a>
+                                    <a class="text-uppercase d-inline-block text-center text-ffffff mt-3 btn-watch-our-video" href=""><span class="pr-3"><i class="fas fa-play"></i></span>WATCH OUR VIDEO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-xl-5 col-12 mt-xl-0 mt-5">
+                    <div class="mx-auto d-block my-auto">
+                        <div class="">
+                            <div>
+                                <img src="img/mascot-toon-experts-my-0.png" class="mascot-toon-experts img-fluid d-block mx-auto" alt="Toon Experts">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIRST SECTION CONTENT :: END -->
+    </div>
+    <!-- FIRST SECTION :: END -->
+    
+    <!-- SECOND SECTION :: BEGIN -->
+    <div class="section-second bg-fafbfd" id="section-two">
+        <div class="container-fluid">
+            <div class="row">    
+                <div class="col">
+                    <div class="mx-auto py-4">
+                        <section class="clients-carousel slider">
+                            <div class="p-4">
+                                <img class="img-fluid" src="img/logo-securly.png">
+                            </div>
+                            <div class="p-4">
+                                <img class="img-fluid" src="img/logo-gcoin.png">
+                            </div>
+                            <div class="p-4">
+                                <img class="img-fluid" src="img/logo-truststamp.png">
+                            </div>
+                            <div class="p-4">
+                                <img class="img-fluid" src="img/logo-zenprives.png">
+                            </div>
+                            <div class="p-4">
+                                <img class="img-fluid" src="img/logo-securly.png">
+                            </div>
+                            <div class="p-4">
+                                <img class="img-fluid" src="img/logo-gcoin.png">
+                            </div>
+                            <div class="p-4">
+                                <img class="img-fluid" src="img/logo-truststamp.png">
+                            </div>
+                            <div class="p-4">
+                                <img class="img-fluid" src="img/logo-zenprives.png">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECOND SECTION :: END-->
+    
+    <!-- THIRD SECTION :: BEGIN -->
+    <div class="section-third bg-ffffff" id="section-three">
+        <div class="container">
+            <div class="row">    
+                <div class="col">
+                    <div class="my-5">
+                        <h2 class="text-center text-uppercase text-39383d"><span class="text-ff534e">TOON EXPERTS</span> IS THE WAY TO GO!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-1400 mx-auto px-5">
+            <div class="row align-items-center my-5">    
+                <div class="col-lg-6 col-12">
+                    <div class="">
+                        <img class="img-fluid d-block mx-auto" src="img/customized-cartoon-explainer-videos-illustration.png">
+                    </div>
+                </div>    
+                <div class="col-lg-6 col-12">
+                    <div class="text-lg-left text-center my-5">
+                        <h3 class="text-39383d"><span class="text-ff534e">CUSTOMIZED</span> CARTOON EXPLAINER VIDEOS</h3>
+                        <p class="text-4c4c51">A fresh, unique and more expressive way to reach out to your audiences!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-lg-block d-none">    
+                <div class="col">
+                    <div class="h-custom">
+                    </div>
+                </div>    
+            </div>
+            <div class="row align-items-center my-5">
+                <div class="col-lg-6 col-12 order-lg-2">
+                    <div class="">
+                        <img class="img-fluid d-block mx-auto" src="img/captivating-motion-graphics-illustration.png">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 order-lg-1">
+                    <div class="text-lg-left text-center my-5">
+                        <h3 class="text-39383d"><span class="text-ff534e">CAPTIVATING</span> MOTION GRAPHICS</h3>
+                        <p class="text-4c4c51">Professionally made Motion Graphic Animations with a minimalistic approach!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- THIRD SECTION :: END-->
+    
+    <!-- FOURTH SECTION :: BEGIN -->
+    <div class="section-fourth bg-fafbfd" id="section-four">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center text-uppercase text-39383d">THE<span class="text-ff534e"> GAME PLAN</span></h2>
+                    <p class="text-center mx-auto d-block py-4 text-828285">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis ante a nisl malesuada.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row container-main">
+                <div class="col gameplanCarousel-container">
+                      <section class="gameplan-carousel slider text-xl-left text-center">
+                          <div>
+                              <div class="row align-items-center">
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <img class="img-fluid" src="img/the-game-plan-the-idea.jpg">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <h2 class="text-uppercase text-fafbfd">THE<span class="text-f4c62a"> IDEA</span></h2>
+                                          <p class="text-ffffff">Every information gathered helps us craft the perfect script for your Custom Explainer Video. We make sure that no detail is left behind in order to make your project a success!</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="row align-items-center">
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <img class="img-fluid" src="img/the-game-plan-storytelling.jpg">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <h2 class="text-uppercase text-fafbfd"><span class="text-f4c62a">STORY</span>TELLING</h2>
+                                          <p class="text-ffffff">After the script has been made and approved, we will then turn words into illustrations through frame by frame storyboards to help you visualize the flow of your Explainer Video.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="row align-items-center">
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <img class="img-fluid" src="img/the-game-plan-visuals-and-voice-overs.jpg">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <h2 class="text-uppercase text-fafbfd">VISUALS & <span class="text-f4c62a">VOICE OVERS</span></h2>
+                                          <p class="text-ffffff">Creatively Designed Style frames are made to help visualize the final quality of the video before it’s finalized. We’ll send in a selection of Voice Overs as well for you to choose that best delivers your core message.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="row align-items-center">
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <img class="img-fluid" src="img/the-game-plan-animation-and-sound-design.jpg">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <h2 class="text-uppercase text-fafbfd">ANIMATION & <span class="text-f4c62a">SOUND DESIGN</span></h2>
+                                          <p class="text-ffffff">This is where everything comes together! We bring your ideas to life by combining the script, visuals and sound effects to create an outstanding impact for your target audience to see.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="row align-items-center">
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <img class="img-fluid" src="img/the-game-plan-its-done.jpg">
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6 col-12">
+                                      <div>
+                                          <h2 class="text-uppercase text-fafbfd">IT’S <span class="text-f4c62a">DONE!</span></h2>
+                                          <p class="text-ffffff">After all has been finalized and approved to your liking, Your one-of-a-kind video explainer is ready to be seen and is delivered in it’s finest quality!</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOURTH SECTION :: END-->
+
+    <!-- FIFTH SECTION :: BEGIN -->
+    <div class="section-fifth bg-ffffff" id="section-five">
+        <div class="container">
+            <div class="row">    
+                <div class="col">
+                    <div class="my-5">
+                        <h2 class="text-center text-uppercase text-39383d">MEET<span class="text-ff534e"> THE EXPERTS!</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">    
+                <div class="col-lg-1 d-lg-block d-none mb-lg-5"></div>
+                <div class="col-lg-5 col-12 mb-lg-5">
+                    <div>
+                        <div class="egg experts-box">
+                            <figure>
+                                <img class="img-fluid" src="img/meet-the-experts-placeholder-image.png">
+                                <figcaption>
+                                    <div class="d-flex flex-column text-center align-items-center justify-content-center h-inherit">
+                                        <h4 class="text-232228">Melvin Choi</h4>
+                                        <p class="text-4c4c51">Art Director</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>  
+                <div class="col-lg-5 col-12 mb-lg-5">
+                    <div>
+                        <div class="egg experts-box">
+                            <figure>
+                                <img class="img-fluid" src="img/meet-the-experts-placeholder-image.png">
+                                <figcaption>
+                                    <div class="d-flex flex-column text-center align-items-center justify-content-center h-inherit">
+                                        <h4 class="text-232228">Melvin Choi II</h4>
+                                        <p class="text-4c4c51">Art Director</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>     
+                <div class="col-lg-1 d-lg-block d-none mb-lg-5"></div>
+                <div class="col-lg-4 col-12">
+                    <div>
+                        <div class="egg experts-box">
+                            <figure>
+                                <img class="img-fluid" src="img/meet-the-experts-placeholder-image.png">
+                                <figcaption>
+                                    <div class="d-flex flex-column text-center align-items-center justify-content-center h-inherit">
+                                        <h4 class="text-232228">Melvin Choi III</h4>
+                                        <p class="text-4c4c51">Art Director</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>    
+                <div class="col-lg-4 col-12">
+                    <div>
+                        <div class="egg experts-box">
+                            <figure>
+                                <img class="img-fluid" src="img/meet-the-experts-placeholder-image.png">
+                                <figcaption>
+                                    <div class="d-flex flex-column text-center align-items-center justify-content-center h-inherit">
+                                        <h4 class="text-232228">Melvin Choi IV</h4>
+                                        <p class="text-4c4c51">Art Director</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>    
+                <div class="col-lg-4 col-12">
+                    <div>
+                        <div class="egg experts-box">
+                            <figure>
+                                <img class="img-fluid" src="img/meet-the-experts-placeholder-image.png">
+                                <figcaption>
+                                    <div class="d-flex flex-column text-center align-items-center justify-content-center h-inherit">
+                                        <h4 class="text-232228">Melvin Choi V</h4>
+                                        <p class="text-4c4c51">Art Director</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-- FIFTH SECTION :: END-->
+    
+    <!-- SIXTH SECTION :: BEGIN -->
+    <div class="section-sixth" id="section-six">
+        <div class="container-fluid bg-f1f2f9 px-0">
+            <div class="row container-main mx-0">
+                <div class="col px-0 position-relative">
+                      <section class="testimonial-carousel slider">
+                          <div>
+                              <div class="w-100 d-flex flex-lg-row flex-column justify-content-around align-items-center testimonial-box">
+                                  <div class="testimonial-text-box text-lg-left text-center px-4">
+                                      <p class="font-italic testimonial-text text-413f4b pb-5">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget leo nibh. Aenean id vulputate quam! ”</p>
+                                      <p class="text-ff534e">Jane Doe I</p>
+                                      <p class="font-italic text-757579">Imperdiet Erat</p>
+                                  </div>
+                                  <div class="position-relative d-flex align-items-center justify-content-center testimonial-video-container vid-one">
+                                      <div class="">
+                                          <a href="" class="testimonial-video-modal-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#testimonial-video-modal">
+                                            <i class="fas fa-play"></i>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>                 
+                    </section>
+                    <div class="position-absolute testimonial-carousel-custom-btn-container">
+                        <a class="d-inline-block" id="testimonial-carousel-custom-prev"><i class="fas fa-chevron-left"></i></a>
+                        <a class="d-inline-block" id="testimonial-carousel-custom-next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    
+                    <!-- VIDEO MODAL :: BEGIN -->
+                    <div class="modal fade" id="testimonial-video-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>        
+                                    <!-- 16:9 aspect ratio -->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Jfrjeg26Cwk" id="video"  allowscriptaccess="always">></iframe>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VIDEO MODAL :: END -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SIXTH SECTION :: END-->    
+    <!-- SEVENTH SECTION :: BEGIN -->
+    <div class="section-seventh bg-232228" id="section-seven">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="my-5">
+                        <h2 class="text-center text-uppercase text-ffffff">WE’D LOVE TO <span class="text-ffd32c">TALK</span> WITH YOU!</h2>
+                        <p class="text-center mx-auto d-block py-4 text-ffffff">(Go Ahead. Start Typing!)</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="container-1400 d-block mx-auto">
+            <div class="footer p-5">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <div class="order-lg-1">
+                        <a href=""><img class="img-fluid logo-toon-experts" src="img/logo-toon-experts.png"></a>
+                    </div>
+                    <div class="order-lg-3">
+                        <ul class="social-icons">
+                            <li class="d-inline-block">
+                                <a target="_blank" href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a target="_blank" href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a target="_blank" href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-lg-2">
+                        <ul class="d-lg-block d-none footer-nav-list">
+                            <li class="d-inline-block px-3"><a href="" class="text-ffffff">Home</a></li>
+                            <li class="d-inline-block px-3"><a href="" class="text-ffffff">The Process</a></li>
+                            <li class="d-inline-block px-3"><a href="" class="text-ffffff">Spotlight</a></li>
+                            <li class="d-inline-block px-3"><a href="" class="text-ffffff">Terms and Conditions</a></li>
+                            <li class="d-inline-block px-3"><a href="" class="text-ffffff">FAQ</a></li>
+                        </ul>
+                        <p class="text-center text-ffffff copyrights-text">All Rights Reserved. All Images and Videos used is designed by Toon Experts.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- SEVENTH SECTION :: END-->
+    
+
+    <!-- SLICK CAROUSEL SCRIPT -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick-carousel/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $(".clients-carousel").slick({
+                centerMode: true,
+                arrows: false,
+                infinite: true,
+                slidesToShow: 4,                
+                slidesToScroll: 4,
+                autoplay:true,
+                autoplaySpeed:0,
+                speed: 4000,
+                cssEase: 'linear',
+                variableWidth: true
+            });
+            $slick_slider = $('.gameplan-carousel');
+                settings = {
+                  infinite: true,
+                    fade: true,
+                    dots: true,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    speed: 1500,
+                    waitForAnimate: false
+                }
+                $slick_slider.slick(settings);
+                
+                // reslick only if it's not slick()
+                $(window).on('resize', function() {
+                  if ($(window).width() < 1201) {
+                    if ($slick_slider.hasClass('slick-initialized')) {
+                      $slick_slider.slick('unslick');
+                    }
+                    return
+                  }
+                
+                  if (!$slick_slider.hasClass('slick-initialized')) {
+                    return $slick_slider.slick(settings);
+                  }
+            });
+            $(".testimonial-carousel").slick({
+                fade: true,
+                arrows: true,
+                speed: 1500,
+                waitForAnimate: true,
+                nextArrow: $('#testimonial-carousel-custom-prev'),
+                prevArrow: $('#testimonial-carousel-custom-next')
+            });
+        });
+    </script>
+    
+</body>
+</html>

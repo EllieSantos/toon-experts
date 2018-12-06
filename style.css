@@ -116,7 +116,7 @@ h4, .h4 {
     height: inherit;
 }
 /* BUTTONS */
-.section-first-content .btn-talk-to-us {
+.section-first .btn-talk-to-us {
     background: -webkit-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
     background: -o-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
     background: -ms-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
@@ -126,13 +126,17 @@ h4, .h4 {
     font-size: 0.833em;
     padding: 12px 0 !important;
     width: 270px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
 }
-.section-first-content .btn-watch-our-video {
+.section-first .btn-watch-our-video {
     border: 3px solid #ffffff;
     border-radius: 10px;
     font-size: 0.833em;
     padding: 9px 0 !important;
     width: 270px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
 }
 /* FIRST SECTION CSS :: BEGIN */
 .section-first {
@@ -156,18 +160,15 @@ h4, .h4 {
 .section-first .nav-list .logo-toon-experts, .section-first .logo-toon-experts {
     width: 184px;
 }
-.section-first-content > div {
-    margin: 122px 0;
-}
-.section-first-content > .d-flex > div {
-    flex: 1;    
+.section-first .section-first-content {
+    padding: 60px 0 120px 0;
 }
 .section-first-content h1 {
     line-height: 1em !important;
     padding-bottom: 0.5em !important;
 }
 .section-first-content p {
-    padding-bottom: 2.5em !important;
+    padding-bottom: 2em !important;
 }
 .section-first .mascot-toon-experts {
     width: 880px;
@@ -205,7 +206,7 @@ h4, .h4 {
     position:absolute;
     height:5px;
     width:100%;
-    background-color:#ffd32c;
+    background-color:#ffffff;
 }
 .spinner-master2 .diagonal.part-1 {
     position:relative;
@@ -248,29 +249,18 @@ h4, .h4 {
 /* FIRST SECTION CSS :: END */
 /* THIRD SECTION CSS :: BEGIN */
 .section-third .container-1400 .h-custom {
-    height: 40px;
+    height: 20px;
 }
 .section-third .container-1400 p {
-    font-size: 14px !important;
+    font-size: 18px !important;
 }
 /* THIRD SECTION CSS :: END */
 /* FOURTH SECTION CSS :: BEGIN */
 .section-fourth > .container > p {
     max-width: 660px;
 }
-.section-fourth .container-main {
-    background-image: url(img/section-third-bg.jpg);
-    background-repeat: repeat-x;
-    background-position: top;
-}
-.section-fourth .gameplanCarousel-container  {
-    background-image: url(img/section-third-bg.jpg);
-    background-repeat: repeat-x;
-    background-position: bottom;
-}
-.section-fourth .container-fluid .gameplanCarousel-container p {
-    max-width: 480px;
-}
+
+
 
 /* THE GAME PLAN CAROUSEL INDICATORS */
 
@@ -415,8 +405,17 @@ h4, .h4 {
 }
 /* FIFTH SECTION CSS :: END */
 /* SIXTH SECTION CSS :: BEGIN */
-.section-sixth .container-fluid .testimonial-box, .section-sixth .container-fluid .testimonial-box .testimonial-video-container {
-    min-height: 100vh;
+.section-sixth .container-fluid .testimonial-box {
+    min-height: 50vh;
+    width: 100%;
+}
+.testimonial-text-box {
+    padding: 100px 0;
+
+}
+.section-sixth .container-fluid .testimonial-box .testimonial-video-container {
+    min-height: 70vh;
+    width: 100%;
 }
 .section-sixth .testimonial-box > div {
     flex: 1;
@@ -428,7 +427,6 @@ h4, .h4 {
     font-size: 2em !important;
 }
 .section-sixth .testimonial-box .testimonial-text-box > p {
-    max-width: 500px;
     display: block;
     margin: 0 auto !important;
 }
@@ -437,6 +435,19 @@ h4, .h4 {
 }
 .section-sixth .testimonial-box .testimonial-text-box > p:nth-child(3) {
     font-size: 0.75em; 
+}
+.section-sixth .testimonial-carousel-custom-btn-container {
+    display: block;
+    top: calc(50vh - 40px) !important;
+    height: max-content;
+    width: max-content;
+    margin: 0 auto;
+    left: calc(50% - 76px);
+    right: calc(50% - 76px);
+}
+.section-sixth .testimonial-carousel-custom-btn-container #testimonial-carousel-custom-prev,
+.section-sixth .testimonial-carousel-custom-btn-container #testimonial-carousel-custom-next {
+    transition: 0.5s;
 }
 /* SIXTH SECTION CSS :: END */
 /* SEVENTH SECTION CSS :: BEGIN */
@@ -482,7 +493,7 @@ h4, .h4 {
         font-size: 20px !important;
     }
     .section-third .container-1400 .h-custom {
-        height: 80px;
+        height: 40px;
     }
 }
 @media (min-width: 992px) {
@@ -490,7 +501,21 @@ h4, .h4 {
         font-size: 22px !important;
     }
     .section-third .container-1400 .h-custom {
-        height: 120px;
+        height: 80px;
+    }
+    .section-sixth .container-fluid .testimonial-box, .section-sixth .container-fluid .testimonial-box .testimonial-video-container {
+        min-height: 100vh;
+    }
+    .section-sixth .testimonial-box .testimonial-text-box > p {
+        max-width: 500px;
+    }
+    .section-sixth .testimonial-text-box {
+        padding: 0;
+    }
+    .section-sixth .testimonial-carousel-custom-btn-container {
+        left: calc(50% - 255px);
+        bottom: 40px;
+        top: unset !important;
     }
 }
 @media (min-width: 1024px) {
@@ -507,7 +532,7 @@ h4, .h4 {
         display: none !important;
     }
     .section-third .container-1400 .h-custom {
-        height: 160px;
+        height: 120px;
     }
     .order-lg-1 {
         order: 1;
@@ -517,6 +542,32 @@ h4, .h4 {
     }
     .order-lg-3 {
         order: 3;
+    }
+}
+@media (min-width: 1200px) {
+    .section-first .nav-bar-main {
+        height: 202px;
+    }
+    .section-first . section-first-content {
+        height: calc(100vh - 202px);
+    }
+    .section-fourth .container-main {
+        background-image: url(img/section-third-bg.jpg);
+        background-repeat: repeat-x;
+        background-position: top;
+        background-color: #7a061b;
+    }
+    .section-fourth .gameplanCarousel-container  {
+        background-image: url(img/section-third-bg.jpg);
+        background-repeat: repeat-x;
+        background-position: bottom;
+        
+    }
+    .section-fourth .container-fluid .gameplanCarousel-container p {
+        max-width: 480px;
+    }
+    .section-fourth .gameplan-carousel slider .row > div:nth-child(1) {
+        padding: 0 15px;
     }
 }
 #myVideo {
@@ -540,7 +591,7 @@ h4, .h4 {
 .section-sixth .testimonial-carousel .testimonial-video-container {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 }
 .section-sixth .testimonial-carousel .vid-one {
     background-image: url(img/testimonial-video-preview.jpg);
@@ -551,10 +602,7 @@ h4, .h4 {
 .section-sixth .testimonial-carousel .vid-three {
     background-image: url(img/the-game-plan-the-idea.png);
 }
-.section-sixth .testimonial-carousel-custom-btn-container {
-    left: calc(50% - 125px);
-    bottom: 40px;
-}
+
 .section-sixth .testimonial-carousel-custom-btn-container a {
     font-size: 40px;
     cursor: pointer;
@@ -565,4 +613,76 @@ h4, .h4 {
 }
 .section-sixth .testimonial-carousel-custom-btn-container a:hover {
     color: #232228 !important;
+}
+.section-sixth .testimonial-video-modal-btn:focus {
+    outline-color: transparent !important;
+}
+/*
+.logo-toon-experts:hover {
+    width: 195px !important;
+    transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+}
+*/
+.modal {
+    width: 95%;
+    overflow: unset !important;
+}
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+#testimonial-video-modal .close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+#testimonial-video-modal .close:hover {
+  color: #f4c62a;
+}
+#testimonial-video-modal .close:hover {
+  color: #f4c62a;
+}
+
+.gameplan-carousel .row > .col-12:nth-child(1) {
+    padding: 0;
+}
+.gameplan-carousel .row > .col-12:nth-child(1) img {
+    width: 100%;
+}
+.gameplan-carousel .row > .col-12:nth-child(2) {
+    background-color: #7a061b;
+    padding: 48px 30px;
+}
+.testimonial-carousel .testimonial-carousel-custom-btn-container a {
+    display: block !important;
+}
+
+.section-first .btn-watch-our-video:hover {
+    /*
+    background: -webkit-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    background: -o-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    background: -ms-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    background: -moz-linear-gradient(bottom, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    background: linear-gradient(to top, rgb(254, 219, 67) 0%, rgb(255, 227, 92) 100%);
+    border-color: transparent;
+    */
+    color: #ffffff  !important;
+    width: 280px;
+}
+.section-first .btn-talk-to-us:hover {
+    color: #39383d  !important;
+    width: 280px;
 }
